@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Comparing C and JavaScript</title>
+  <link rel="stylesheet" href="./css/table.css">
+
+  <style>
+      .parent {
+          width: 100%; height: 100vh; display: grid; align-items: center; justify-content: center;
+      }
+
+      .child {
+          width: 500px;
+      }
+  </style>
+</head>
+
+<body>
+    <section class="parent">
+        <div class="child">
+            <table>
+              <tr>
+                  <th>C</th>
+                  <th>JavaScript</th>
+              </tr>
+              <tr>
+                  <td>int counter = 0;</td>
+                  <td>let counter = 0;</td>
+              </tr>
+              <tr>
+                  <td>counter = counter + 1;</td>
+                  <td>counter = counter + 1;</td>
+              </tr>
+              <tr>
+                  <td>counter += 1;</td>
+                  <td>counter += 1;</td>
+              </tr>
+              <tr>
+                  <td>counter++;</td>
+                  <td>counter++;</td>
+              </tr>
+              <tr>
+                  <td>if(condition) {} else {}</td>
+                  <td>if(condition) {} else {}</td>
+              </tr>
+              <tr>
+                  <td>while(condition) {}</td>
+                  <td>while(condition) {}</td>
+              </tr>
+              <tr>
+                  <td>for(int i = 0; i < 10; i++) {}</td>
+                  <td>for(let i = 0; i < 10; i++) {}</td>
+              </tr>
+            </table>
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Changing font size using JavaScript</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a nisi nisi. Praesent dapibus nisi nec tempus lacinia. Nunc tincidunt sapien sit amet enim volutpat, et porttitor velit molestie. Etiam lacus lectus, venenatis non mauris imperdiet, condimentum convallis dolor. Curabitur gravida est accumsan ligula vestibulum, nec consectetur eros fermentum. Sed sodales dignissim gravida. Suspendisse lacinia purus leo, eu suscipit ligula commodo ornare. Pellentesque sed ipsum vitae arcu congue volutpat. Donec eleifend vulputate lorem eu varius. Sed blandit vulputate dolor, quis suscipit enim. Nulla id sapien eu sapien imperdiet bibendum sed vitae magna. Curabitur commodo vehicula malesuada. Cras ornare orci vel ex accumsan, non lobortis mi vehicula. Vestibulum lacus enim, dapibus at placerat blandit, pharetra facilisis leo. Integer nec consectetur dolor. Cras porttitor tincidunt tristique.</p>
+
+    <select>
+        <option value="xx-large">xx-large</option>
+        <option value="x-large">x-large</option>
+        <option value="large">large</option>
+        <option selected value="initial">initial</option>
+        <option value="small">small</option>
+        <option value="x-small">x-small</option>
+        <option value="xx-small">xx-small</option>
+    </select>
+
+  <script>
+    document.querySelector('select').onchange = function() {
+        document.querySelector('body').style.fontSize = this.value;
+    }
+
+  </script>
+
+</body>
+</html>

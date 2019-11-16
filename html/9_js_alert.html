@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Exploring JavaScript</title>
+
+  <script>
+      function showAlert() {
+          let name = document.querySelector("#name").value;
+
+          alert("Hey, " + name);
+      }
+  </script>
+</head>
+
+<body>
+<form onsubmit="showAlert(); return false;">
+    <input type="text" name="name" id="name" autoFocus="true">
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Blink using JavaScript</title>
+</head>
+
+<body>
+  <h1 id="heading">Blink blink!</h1>
+
+  <script>
+    function showhide() {
+    if(document.querySelector('#heading').style.visibility == "hidden") {
+          document.querySelector('#heading').style.visibility = "visible";
+    }
+     else {
+        document.querySelector('#heading').style.visibility = "hidden";
+    }
+
+    }
+
+    setInterval(showhide, 1000);
+
+  </script>
+</body>
+</html>
